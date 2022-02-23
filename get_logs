@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Enter log group name: "
+read LOG_GROUP_NAME
+
+echo "Enter Log Stream name: "
+read LOG_STREAM_NAME
+aws logs get-log-events --log-group-name $LOG_GROUP_NAME --log-stream-name $LOG_STREAM_NAME

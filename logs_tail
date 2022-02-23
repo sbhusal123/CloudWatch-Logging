@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Enter log group name: "
+read LOG_GROUP_NAME
+
+aws logs tail $LOG_GROUP_NAME
